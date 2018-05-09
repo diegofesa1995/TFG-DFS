@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/titulocabecera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:text="Confirmación de Datos"
+        android:textSize="20dp"
+        android:textColor="?attr/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/titulonombreproducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Producto: "
+        android:layout_below="@id/titulocabecera"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infonombreproducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/titulonombreproducto"
+        android:layout_below="@id/titulocabecera"/>
+
+    <TextView
+        android:id="@+id/titulolote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulonombreproducto"
+        android:text="Lote "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infolote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infonombreproducto"
+        android:layout_toRightOf="@id/titulolote" />
+
+    <TextView
+        android:id="@+id/titulounidaddepeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulolote"
+        android:text="Unidad de peso: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infounidaddepeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infolote"
+        android:layout_toRightOf="@id/titulounidaddepeso" />
+
+    <TextView
+        android:id="@+id/titulosubunidaddepeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulounidaddepeso"
+        android:text="Subunidad de peso: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infosubunidaddepeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infounidaddepeso"
+        android:layout_toRightOf="@id/titulosubunidaddepeso" />
+
+
+    <TextView
+        android:id="@+id/titulocantidadlote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulosubunidaddepeso"
+        android:text="Cantidad: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infocantidadlote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infosubunidaddepeso"
+        android:layout_toRightOf="@id/titulocantidadlote" />
+
+    <TextView
+        android:id="@+id/titulopesounidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulocantidadlote"
+        android:text="Peso Unidad: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infopesounidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infocantidadlote"
+        android:layout_toRightOf="@id/titulopesounidad" />
+
+    <TextView
+        android:id="@+id/titulopesosubunidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulopesounidad"
+        android:text="Peso SubUnidad: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infopesosubunidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infopesounidad"
+        android:layout_toRightOf="@id/titulopesosubunidad" />
+
+    <TextView
+        android:id="@+id/titulosubcantidadlote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulopesosubunidad"
+        android:text="Subcantidad: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infosubcantidadlote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infopesosubunidad"
+        android:layout_toRightOf="@id/titulosubcantidadlote" />
+
+
+    <TextView
+        android:id="@+id/titulomargenlote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulosubcantidadlote"
+        android:text="Margen de beneficio: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infomargenlote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infosubcantidadlote"
+        android:layout_toRightOf="@id/titulomargenlote" />
+
+    <TextView
+        android:id="@+id/titulopreciolote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulomargenlote"
+        android:text="Precio compra: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infopreciolote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infomargenlote"
+        android:layout_toRightOf="@id/titulopreciolote" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infopreciolote"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/botoncancelarinfolote"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancelar"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/botonconfirmarinfolote"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Confirmar"
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+
+</RelativeLayout>

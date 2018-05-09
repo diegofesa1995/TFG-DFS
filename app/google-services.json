@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "146373063024",
+    "firebase_url": "https://tfgr-f044d.firebaseio.com",
+    "project_id": "tfgr-f044d",
+    "storage_bucket": "tfgr-f044d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146373063024:android:0f0de3fb80d634fa",
+        "android_client_info": {
+          "package_name": "com.example.diego.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "146373063024-rgvcbi7vc87q418vph19vc5njkrv2fr9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCY9GbKJU0VA1V5Hgj4UH3SHD0oX0hY8oA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

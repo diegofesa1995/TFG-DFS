@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/titulocabecera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:text="Confirmación de Datos"
+        android:textSize="20dp"
+        android:textColor="?attr/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/titulonombreproducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre: "
+        android:layout_below="@id/titulocabecera"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infonombreproducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/titulonombreproducto"
+        android:layout_below="@id/titulocabecera"/>
+
+    <TextView
+        android:id="@+id/titulocantidadproducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulonombreproducto"
+        android:text="Cantidad: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infocantidadproducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infonombreproducto"
+        android:layout_toRightOf="@id/titulocantidadproducto" />
+
+    <TextView
+        android:id="@+id/tituloproveedorproducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulocantidadproducto"
+        android:text="Proveedor: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infoproveedorproducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infocantidadproducto"
+        android:layout_toRightOf="@id/tituloproveedorproducto" />
+
+    <TextView
+        android:id="@+id/titulomargenbeneficio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tituloproveedorproducto"
+        android:text="Margen Beneficio: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infomargenbeneficio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infoproveedorproducto"
+        android:layout_toRightOf="@id/titulomargenbeneficio" />
+
+    <TextView
+        android:id="@+id/titulopreciodecompra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulomargenbeneficio"
+        android:text="Precio Compra: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infopreciocompra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infomargenbeneficio"
+        android:layout_toRightOf="@id/titulopreciodecompra" />
+
+    <TextView
+        android:id="@+id/tituloivaproducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulopreciodecompra"
+        android:text="IVA: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infoivaproducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infopreciocompra"
+        android:layout_toRightOf="@id/tituloivaproducto" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infoivaproducto"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/botoncancelarinfoproducto"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancelar"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/botonconfirmarinfoproducto"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Confirmar"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:weightSum="3">
+
+    <Button
+        android:id="@+id/btnanadirlote"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Añadir"
+        android:background="#00FF66"
+        android:textColor="#FFFFFF"
+        android:drawableRight="@drawable/ic_anadir_pedido"/>
+
+    <Button
+        android:id="@+id/btneditarproducto"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Editar"
+        android:background="#0099FF"
+        android:textColor="#FFFFFF"
+        android:drawableRight="@drawable/ic_edit"/>
+
+    <Button
+        android:id="@+id/btndeleteproducto"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Borrar"
+        android:textColor="#FFFFFF"
+        android:drawableRight="@drawable/ic_delete"
+        android:background="#FF0000"
+        />
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titulocabecera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:text="Confirmación de Datos"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/titulonombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulocabecera"
+        android:text="Nombre: "
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/infonombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulocabecera"
+        android:layout_toRightOf="@id/titulonombre" />
+
+    <TextView
+        android:id="@+id/titulorazonsocial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infonombre"
+        android:text="RazonSocial: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/inforazonsocial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infonombre"
+        android:layout_toRightOf="@id/titulorazonsocial" />
+
+    <TextView
+        android:id="@+id/titulonif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inforazonsocial"
+        android:text="NIF: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infonif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inforazonsocial"
+        android:layout_toRightOf="@id/titulonif" />
+
+    <TextView
+        android:id="@+id/tituloemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infonif"
+        android:text="Email: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infoemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infonif"
+        android:layout_toRightOf="@id/tituloemail" />
+
+    <TextView
+        android:id="@+id/titulotelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infoemail"
+        android:text="Telefono: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infotelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infoemail"
+        android:layout_toRightOf="@id/titulotelefono" />
+
+    <TextView
+        android:id="@+id/titulodireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infotelefono"
+        android:text="Direccion: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infodireccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infotelefono"
+        android:layout_toRightOf="@id/titulodireccion" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infodireccion"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/botoncancelarinfo"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancelar"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/botonconfirmarinfo"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Confirmar"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+
+</RelativeLayout>

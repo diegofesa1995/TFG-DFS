@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tituloanadirproductoanadirpedido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:text="Añadir artículo"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutprimero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tituloanadirproductoanadirpedido"
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/autocompleteproductoanadirpedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Producto"
+                android:singleLine="true" />
+
+            <ImageButton
+                android:id="@+id/btnclear"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignRight="@id/autocompleteproductoanadirpedido"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                android:src="@drawable/ic_clear" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:id="@+id/spinnerloteproductoanadirpedido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+        </Spinner>
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/layoutsegundoanadirproductoanadirpedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutprimero"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <EditText
+            android:id="@+id/cantidadunidadproductoanadirpedido"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Cantidad Unidad"
+            android:visibility="gone"
+            android:inputType="numberDecimal"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/cantidadsubunidadproductoanadirpedido"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:visibility="gone"
+            android:singleLine="true"></EditText>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/pesovariableproductoanadirpedido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:hint="Peso Variable"
+            android:visibility="gone"
+            android:inputType="numberDecimal"
+            android:singleLine="true" />
+
+    </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/precioventaproductoanadirpedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:hint="Precio Venta"
+        android:visibility="gone"
+        android:inputType="numberDecimal"
+        android:singleLine="true" />
+
+</RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/precioventaproductoanadirpedido"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/botoncancelarproductonuevonuevoepedido"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancelar"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/botonaceptarproductonuevonuevopedido"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Añadir"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+
+
+</LinearLayout>

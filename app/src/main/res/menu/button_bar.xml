@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/botonpedidosbar"
+        android:enabled="true"
+        android:title="Pedidos"
+        android:icon="@drawable/ic_pedidos" />
+
+
+    <item
+        android:id="@+id/botonclientesbar"
+        android:enabled="true"
+        android:title="Clientes"
+        android:icon="@drawable/ic_clientes"
+        />
+
+    <item
+        android:id="@+id/botonproveedoresbar"
+        android:enabled="true"
+        android:title="Proveedores"
+        android:icon="@drawable/ic_proveedores"
+        />
+
+    <item
+        android:id="@+id/botonstockbar"
+        android:enabled="true"
+        android:title="Stock"
+        android:icon="@drawable/ic_stock"
+        />
+
+    <item
+        android:id="@+id/botonanadirpedidobar"
+        android:enabled="true"
+        android:title="Añadir Pedido"
+        android:icon="@drawable/ic_anadir_pedido"
+        />
+</menu>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnveralbaranesproveedores"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Albaranes"
+            android:background="#FFCC33"
+            android:textColor="#FFFFFF"
+            android:drawableRight="@drawable/ic_pedidos"/>
+
+        <Button
+            android:id="@+id/btnanadiralbaranproveedor"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Albarán"
+            android:background="#00FF66"
+            android:textColor="#FFFFFF"
+            android:drawableRight="@drawable/ic_anadir_pedido"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btneditarclienteproveedor"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Editar"
+            android:background="#0099FF"
+            android:textColor="#FFFFFF"
+            android:drawableRight="@drawable/ic_edit"/>
+
+        <Button
+            android:id="@+id/btndeleteclienteproveedor"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Borrar"
+            android:textColor="#FFFFFF"
+            android:drawableRight="@drawable/ic_delete"
+            android:background="#FF0000"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
+
